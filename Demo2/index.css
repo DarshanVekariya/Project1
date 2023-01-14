@@ -1,0 +1,839 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.mobileheader {
+    height: 38px;
+    padding-top: 2%;
+    display: inline-block;
+    display: none;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.mobileheader .mobilediv1 {
+    width: 20%;
+    float: left;
+}
+
+.mobileheader .mobilediv1 img {
+    width: 14%;
+    margin-left: 25%;
+    background-color: #744636;
+}
+.mobileheader .mobilediv1 i{
+    font-size: 22px;
+    margin-left: 8%;
+    color: #744636;
+}
+
+.mobileheader .mobilediv2 {
+    width: 70%;
+    float: left;
+    text-align: center;
+}
+
+.mobileheader .mobilediv2 img {
+    width: 28%;
+}
+
+.mobileheader .mobilediv3 {
+    width: 10%;
+    float: left;
+}
+
+.mobileheader .mobilediv3 i {
+    width: 50%;
+    float: right;
+    font-size: 22px;
+    color: #744636;
+}
+
+@media screen and (max-width:1200px) {
+    .header {
+        display: none;
+    }
+
+    .mobileheader {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+}
+
+.header .language {
+    background-color: dimgrey;
+    height: 30px;
+    width: 100%;
+    display: block;
+}
+
+.header .language .langoption {
+    float: right;
+    background-color: dimgray;
+    margin: 0.5% 2% 0 0;
+    border: none;
+}
+
+.header .header2 {
+    padding: 20px 0 29px;
+    background-color: rgb(192,191,47);
+    width: 100%;
+    height: 40px;
+    /* float: left; */
+    display: inline-block;
+}
+
+.header2 .logo a img {
+    margin: 1% 0 0 2%;
+    float: left;
+    width: 28%;
+}
+
+.header2 .textbox {
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-left: 9%;
+   
+}
+.header2 .textbox input{
+    height: 47px;
+    width: 67%;
+    border: none;
+    outline: none;
+    padding-left: 5%;
+    margin-right: -5px;
+    font-family: montserrat;
+    font-weight: 1000;
+    border-radius: 1%;
+
+}
+
+.header2 .textbox .searchbtn {
+    text-align: center;
+    width: 11%;
+    height: 49.5px;
+    background-color: rgb(192,191,47);
+    border:  2px solid white;
+}
+.header2 .textbox .searchbtn i{
+    color: white;
+}
+
+.header2 .header2link {
+    float: right;
+    width: 25%;
+}
+
+.header2 .header2link a {
+    padding-left: 2%;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    font-family: filson-pro;
+    color: rgb(102,52,30);
+}
+
+.header2 .header2link i{
+    font-size: 22px;
+}
+
+.buttomheader {
+    height: 45px;
+    width: 100%;
+    background-color: white;
+}
+
+.buttomheader .AllCategory {
+    width: 30%;
+    padding-left: 4%;
+    padding-top: 1%;
+    display: inline-block;
+
+}
+
+.buttomheader .AllCategory a {
+    text-decoration: none;
+    color:  rgb(100,48,30);
+    font-family: filson-pro;
+}
+
+.AllCategory .dropContent {
+    text-decoration: none;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.AllCategory .dropContent a {
+    text-decoration: none;
+    display: block;
+}
+
+.AllCategory a:hover .dropContent {
+    display: block;
+}
+
+.buttomheader .menu {
+    float: right;
+    width: 44%;
+    height: 100%;
+    padding-top: 1%;
+}
+
+.buttomheader .menu a {
+    text-decoration: none;
+    height: 100%;
+    padding-left: 3%;
+    color: #64301e;
+    font-family: filson-pro;
+}
+.buttomheader .menu a:hover{
+    color:rgb(192,191,47) ;
+}
+
+.choice {
+    padding-left: 5%;
+    height: 100%;
+    background-color: #e9e7e7;
+}
+
+.choice .ch-content h1 {
+    margin: 0%;
+    font-family: filson-pro;
+}
+.choice .ch-content p{
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+.choice .ch-content {
+    color:  rgb(100,48,30);
+    padding: 2%;
+}
+
+.choice .ch-content .ch-btn {
+    margin-top: 3%;
+    padding: 1% 2%;
+    background-color: rgb(192,191,47);
+    
+    color: white;
+    border: none;
+}
+.choice .ch-content .ch-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: filson-pro;
+}
+.choice .ch-content .ch-btn:hover{
+    background-color: #64301e;
+}
+
+.searchpro {
+    padding: 2% 0 6% 6%;
+}
+
+.searchpro .searchfri {
+    font-size: 22px;
+    color: rgb(192,191,47);
+    margin-bottom: 1%;
+    font-family: filson-pro;
+}
+
+.searchpro .searchsec .searchdrop {
+    float: left;
+    display: flex;
+    margin-right: 1.5%;
+}
+
+@media screen and (max-width:750px) {
+    .searchpro .searchsec {
+        width: 100px;
+    }
+}
+@media screen and (max-width:995px) {
+    .searchpro .searchsec #searchdrop{
+        width: 50%;
+        margin:2% 0% 2% 45%;
+    }
+}
+
+@media screen and (max-width:995px) {
+    .searchpro .searchsec .searchdrop{
+       margin-bottom: 5%;
+    }
+}
+
+.searchpro .searchsec .searchdrop input {
+    padding-left: 5%;
+    font-family: montserrat;
+    font-weight: 700;
+    border: 0.5px solid black;
+    border-right: none;
+}
+.searchpro .searchsec .searchdrop button{
+    background-color: #a4a5a9;
+    border: 0.5px solid black;
+    border-left: none;
+    width: 37px;
+    height: 47px;
+}
+
+.searchpro .searchsec .searchdrop .searchprobtn {
+    width: 120px;
+    background-color:rgb(192,191,47) ;
+    color: white;
+    border:none;
+}
+
+.searchpro .searchsec .searchdrop .searchprobtn a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: montserrat;
+    font-weight: 700;
+}
+.searchpro .searchsec .searchdrop .searchprobtn:hover{
+    background-color: #744636;
+}
+.searchpro .searchsec .searchdrop i{
+    color: white;
+}
+
+.mainadvan {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    background-color: #f6f6f6;
+}
+
+.mainadvan .advantage {
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.mainadvan .advantage .advantageitem {
+    float: left;
+    width: 33%;
+    padding: 0% 0% 4% 0;
+    background-color: #e9e7e7;
+}
+.mainadvan .advantage .advantageitem .itemtitle a{
+    text-decoration: none;
+    color:#64301e;
+    font-family: montserrat;
+}
+.mainadvan .advantage .advantageitem .itemtitle a:hover{
+    color: rgb(192,191,47);
+}
+.mainadvan .advantage .advantageitem .itemdesc p{
+    color: #64301e;
+    font-size: 110%;
+    font-family: montserrat;
+}
+
+@media screen and (max-width:600px) {
+
+    .mainadvan .advantage .advantageitem {
+        width: 100%;
+    }
+}
+
+.mainexplorproduct {
+    padding-left: 6%;
+    display: inline-block;
+}
+
+.mainexplorproduct .explorprod {
+    width: 94%;
+}
+
+.mainexplorproduct .explorprod .heading {
+    text-align: center;
+}
+.mainexplorproduct .explorprod .heading p{
+    margin: 71px 0px 15px 0px;
+    color: rgb(77, 12, 12);
+    font-family: filson-pro;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+
+}
+
+.mainexplorproduct .explorprod .mainitem {
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding-bottom: 7%;
+}
+
+.mainexplorproduct .explorprod .mainitem .item1 {
+    width: 24%;
+    height: 200px;
+    margin:1% 1% 0 0;
+    float: left;
+    text-align: center;
+    position: relative;
+    /* background-image: url("images/0002708_confiserie_450.jpeg"); */
+    /* background-size: 100% 100%; */
+}
+
+
+@media screen and (max-width:950px) {
+    .mainexplorproduct .explorprod .mainitem .item1 {
+        width: 48%;
+        text-transform: uppercase;
+    }
+}
+
+.mainexplorproduct .explorprod .mainitem .item1 img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0px;   
+}
+
+.mainexplorproduct .explorprod .mainitem .item1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.mainexplorproduct .explorprod .mainitem .item1 #itemimg{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.mainexplorproduct .explorprod .mainitem .item1 #itemlink{
+    position: absolute;
+    top: 38%;
+    left: 6%;
+}
+
+
+.mainexplorproduct .explorprod .mainitem .item2 {
+    width: 24%;
+    margin:1% 1% 0 0;
+    height: 200px;
+    text-align: center;
+    float: left;
+    position: relative;
+    /* background-image: url("images/0002709_noix-et-arachides_450.jpeg");
+    background-size: 100% 100%; */
+    /* background-position:center ; */
+}
+
+@media screen and (max-width:950px) {
+    .mainexplorproduct .explorprod .mainitem .item2 {
+        width: 48%;
+        text-transform: uppercase;
+    }
+}
+
+.mainexplorproduct .explorprod .mainitem .item2 img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0px;   
+}
+
+.mainexplorproduct .explorprod .mainitem .item2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+
+.mainexplorproduct .explorprod .mainitem .item3 {
+    width: 24%;
+    margin:1% 1% 0 0;
+    height: 200px;
+    float: left;
+    text-align: center;
+    position: relative;
+    /* background-image: url("images/0001221_melanges-grignotines-fruits-seches_450.jpeg");
+    background-size: 100% 100%; */
+}
+
+.mainexplorproduct .explorprod .mainitem .item3 img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0px;   
+}
+
+@media screen and (max-width:950px) {
+    .mainexplorproduct .explorprod .mainitem .item3 {
+        width: 48%;
+        text-transform: uppercase;
+    }
+}
+
+
+.mainexplorproduct .explorprod .mainitem .item3 a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.mainexplorproduct .explorprod .mainitem .item4 {
+    width: 24%;
+    margin:1% 1% 0 0;
+    height: 200px;
+    text-align: center;
+    float: left;
+    position: relative;
+    /* background-image: url("images/0001219_chocolats-produits-enrobes_450.jpeg");
+    background-size: 100% 100%; */
+}
+
+.mainexplorproduct .explorprod .mainitem .item4 img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0px;   
+}
+
+@media screen and (max-width:950px) {
+    .mainexplorproduct .explorprod .mainitem .item4 {
+        width: 48%;
+        text-transform: uppercase;
+    }
+}
+
+
+.mainexplorproduct .explorprod .mainitem .item4 a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.mainimg {
+    display: inline-block;
+}
+
+.mainimg .image {
+    padding-left: 6%;
+    width: 89%;
+}
+
+.mainimg .image .image1 {
+    float: left;
+    width: 49%;
+    padding-right: 1%;
+}
+
+@media screen and (max-width:950px) {
+    .mainimg .image .image1 {
+        width: 100%;
+    }
+}
+
+.mainimg .image .image1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.mainimg .image .image2 {
+    float: left;
+    width: 49%;
+}
+
+@media screen and (max-width:950px) {
+    .mainimg .image .image2 {
+        width: 100%;
+    }
+}
+
+.mainimg .image .image2 img {
+    height: 100%;
+    width: 100%;
+}
+
+.service {
+    width: 100%;
+    padding: 1% 0 1% 0;
+    display: inline-block;
+}
+.service {
+    font-size: 170%;
+}
+
+.service .service1 {
+    width: 32%;
+    height: 230px;
+    margin-right: 1%;
+    font-family: filson-pro;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    float: left;
+    background-image: url("images/creataccount.jpg");
+    background-size: 100% 100%;
+}
+.service .service1 p{
+    margin-top: 12%;
+}
+
+@media screen and (max-width:950px) {
+    .service .service1 {
+        width: 98%;
+        padding-top: 10%;
+    }
+    .service .service1 p{
+        margin-top: 2%;
+    }
+}
+
+.service .service2 {
+    width: 32%;
+    height: 230px;
+    margin-right: 1%;
+    font-family: filson-pro;
+    font-weight: 700;
+    float: left;
+    text-align: center;
+    color: white;
+    background-image: url("images/quickorser.jpg");
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width:950px) {
+    .service .service2 {
+        width: 98%;
+        padding-top: 10%;
+    }
+}
+
+.service .service3 {
+    width: 33.5%;
+    height: 230px;
+    margin-right: 0.5%;
+    font-family: filson-pro;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    float: left;
+    background-image: url("images/contact\ us.jpg");
+    background-size: 100% 100%;
+}
+
+.service .service3 p{
+    margin-top: 12%;
+}
+
+
+@media screen and (max-width:950px) {
+    .service .service3 {
+        width: 98%;
+        padding-top: 10%;
+    }
+    .service .service3 p{
+        margin-top: 2%;
+    }
+}
+
+.service .servicebtn {
+    padding: 3%;
+    background-color: rgb(192,191,47);
+    border: none;
+    color: white;
+    font-family: montserrat;
+    font-weight: 700;
+}
+.service .servicebtn:hover{
+    background-color: #64301e;
+}
+
+.social {
+    width: 100%;
+    background-color: #e3e4e6;
+    display: inline-block;
+    text-align: center;
+}
+@media screen and (max-width:950px) {
+    .social {
+        text-align: center;
+    }
+}
+
+.social h3 {
+    float: left;
+    padding-left: 5%;
+    color: #744636;
+    font-family: montserrat
+}
+
+.social i {
+    float: left;
+    padding: 22px 0% 0% 2%;
+}
+
+.footer {
+    width: 100%;
+    display: inline-block;
+    font-family: filson-pro;
+}
+
+.footer .content {
+    padding-left: 3%;
+    display: inline-block;
+    color: #64301e;
+    margin-bottom: 5.5%;
+}
+.footer .content a{
+    color: #64301e;
+}
+.footer .content a:hover{
+    color:rgb(192,191,47) ;
+}
+
+.footer .content .cont1 {
+    width: 30%;
+    float: left;
+    margin-top: 2%;
+    padding-right: 3%;
+}
+.footer .content .cont1 p{
+    font-size: 80%;
+}
+
+@media screen and (max-width:650px) {
+        .footer .content .cont1 {
+        width: 100%;
+    }
+}
+
+.footer .content .cont1 a {
+    text-decoration: none;
+}
+
+.footer .content .cont2 {
+    float: left;
+    width: 17%;
+    margin-top: 49px;
+    padding-right: 1%;
+}
+.footer .content .cont2 strong{
+    font-size: 15px;
+}
+
+@media screen and (max-width:650px) {
+    .footer .content .cont2 {
+        width: 100%;
+    }
+}
+.footer .content .cont2 ul{
+    padding-left: 0px;
+    font-size: 80%;
+}
+
+.footer .content .cont2 ul li {
+    list-style: none;
+    padding-top: 5%;
+}
+
+.footer .content .cont2 ul li a {
+    text-decoration: none;
+}
+
+.footer .copyright {
+    padding: 0.5% 10%;
+    background-color: #444444;
+    height: 30px;
+}
+.footer .copyright div p{
+    color: #817e7d;
+    margin: 0;
+}
+
+.footer .copyright div p span{
+    color: white;
+}
+.footer .copyright div {
+    padding-right: 2%;
+    color: white;
+    float: left;
+}
+@media screen and (max-width:800px) {
+    .footer .copyright div{
+        width: 100%;
+        text-align: center;
+    }
+    .footer .copyright {
+        height: 65px;
+    }
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    /* transition: 0.3s; */
+}
+
+.overlay select {
+    background-color: #0c0a0a;
+    color: #818181;
+    border: none;
+    outline: none;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
